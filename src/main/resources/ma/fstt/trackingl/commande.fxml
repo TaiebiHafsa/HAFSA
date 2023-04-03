@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="355.0" prefWidth="466.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.fstt.trackingl.CommandeController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <Label text="Nom :" />
+        <TextField fx:id="nom"/>
+        <Label text="Prix"  />
+        <TextField fx:id="prix"/>
+        <Button mnemonicParsing="false" text="Save" fx:id="ok"  onAction="#onSaveButtonClick" />
+        <Button mnemonicParsing="false" text="Delete" fx:id="ok"  onAction="#onDeleteButtonClick" />
+        <Button mnemonicParsing="false" text="Update" fx:id="ok"  onAction="#onUpdateButtonClick" />
+        <TableView prefHeight="200.0" prefWidth="200.0" fx:id="mytable">
+            <columns>
+                <TableColumn prefWidth="75.0" text="id" fx:id="col_id"/>
+                <TableColumn prefWidth="75.0" text="nom" fx:id="col_nom"/>
+                <TableColumn prefWidth="75.0" text="prix" fx:id="col_prix"/>
+            </columns>
+        </TableView>
+    </children>
+
+
+</VBox>
